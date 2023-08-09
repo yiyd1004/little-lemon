@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.a164e6eb.css",
-    "main.js": "/static/js/main.cec8d9fb.js",
-    "static/js/787.980eb6f2.chunk.js": "/static/js/787.980eb6f2.chunk.js",
-    "static/media/Mario-and-Adrian-A.jpg": "/static/media/Mario-and-Adrian-A.7f44c6d6e341a27d14b3.jpg",
-    "static/media/Mario-and-Adrian-B.jpg": "/static/media/Mario-and-Adrian-B.6ba0e06bfa9c1ea75109.jpg",
-    "static/media/restaurant-chef.jpg": "/static/media/restaurant-chef.4b4c2d26b514db32e8fc.jpg",
-    "static/media/greek-salad.jpg": "/static/media/greek-salad.bed423a1fab5b210e347.jpg",
-    "static/media/restauranfood.jpg": "/static/media/restauranfood.e8abf5b772b6817189aa.jpg",
-    "static/media/bruchetta.png": "/static/media/bruchetta.ec260fe26a159e05c0c0.png",
-    "static/media/Logo.svg": "/static/media/Logo.6c132dfefa69396bba43f72aa595e62f.svg",
-    "static/media/personB.png": "/static/media/personB.f4e349ed106ade0ebbdc.png",
-    "static/media/personD.png": "/static/media/personD.ec2c000c5af03c361cdd.png",
-    "static/media/personC.png": "/static/media/personC.663c0d155a7354631dcb.png",
-    "static/media/personA.png": "/static/media/personA.0664d39cfe1d5b6c9dcf.png",
-    "index.html": "/index.html",
-    "main.a164e6eb.css.map": "/static/css/main.a164e6eb.css.map",
-    "main.cec8d9fb.js.map": "/static/js/main.cec8d9fb.js.map",
-    "787.980eb6f2.chunk.js.map": "/static/js/787.980eb6f2.chunk.js.map"
+    "main.css": "./static/css/main.9bef1e0d.css",
+    "main.js": "./static/js/main.a8981839.js",
+    "static/js/787.980eb6f2.chunk.js": "./static/js/787.980eb6f2.chunk.js",
+    "static/media/Mario-and-Adrian-A.jpg": "./static/media/Mario-and-Adrian-A.7f44c6d6e341a27d14b3.jpg",
+    "static/media/Mario-and-Adrian-B.jpg": "./static/media/Mario-and-Adrian-B.6ba0e06bfa9c1ea75109.jpg",
+    "static/media/restaurant-chef.jpg": "./static/media/restaurant-chef.4b4c2d26b514db32e8fc.jpg",
+    "static/media/greek-salad.jpg": "./static/media/greek-salad.bed423a1fab5b210e347.jpg",
+    "static/media/restauranfood.jpg": "./static/media/restauranfood.e8abf5b772b6817189aa.jpg",
+    "static/media/bruchetta.png": "./static/media/bruchetta.ec260fe26a159e05c0c0.png",
+    "static/media/Logo.svg": "./static/media/Logo.6c132dfefa69396bba43f72aa595e62f.svg",
+    "static/media/personB.png": "./static/media/personB.f4e349ed106ade0ebbdc.png",
+    "static/media/personD.png": "./static/media/personD.ec2c000c5af03c361cdd.png",
+    "static/media/personC.png": "./static/media/personC.663c0d155a7354631dcb.png",
+    "static/media/personA.png": "./static/media/personA.0664d39cfe1d5b6c9dcf.png",
+    "index.html": "./index.html",
+    "main.9bef1e0d.css.map": "./static/css/main.9bef1e0d.css.map",
+    "main.a8981839.js.map": "./static/js/main.a8981839.js.map",
+    "787.980eb6f2.chunk.js.map": "./static/js/787.980eb6f2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a164e6eb.css",
-    "static/js/main.cec8d9fb.js"
+    "static/css/main.9bef1e0d.css",
+    "static/js/main.a8981839.js"
   ]
 }
