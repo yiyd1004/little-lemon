@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a164e6eb.css",
-    "main.js": "/static/js/main.225aee3d.js",
+    "main.js": "/static/js/main.cec8d9fb.js",
     "static/js/787.980eb6f2.chunk.js": "/static/js/787.980eb6f2.chunk.js",
     "static/media/Mario-and-Adrian-A.jpg": "/static/media/Mario-and-Adrian-A.7f44c6d6e341a27d14b3.jpg",
     "static/media/Mario-and-Adrian-B.jpg": "/static/media/Mario-and-Adrian-B.6ba0e06bfa9c1ea75109.jpg",
@@ -16,11 +16,11 @@
     "static/media/personA.png": "/static/media/personA.0664d39cfe1d5b6c9dcf.png",
     "index.html": "/index.html",
     "main.a164e6eb.css.map": "/static/css/main.a164e6eb.css.map",
-    "main.225aee3d.js.map": "/static/js/main.225aee3d.js.map",
+    "main.cec8d9fb.js.map": "/static/js/main.cec8d9fb.js.map",
     "787.980eb6f2.chunk.js.map": "/static/js/787.980eb6f2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a164e6eb.css",
-    "static/js/main.225aee3d.js"
+    "static/js/main.cec8d9fb.js"
   ]
 }
