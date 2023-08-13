@@ -191,6 +191,7 @@ function BookingForm({ availableTime, dispatchUpdateTimes }) {
                         required
                     />
                     <span
+                        data-testid="firstName-error-msg"
                         className={`${errorTextStyle} ${
                             firstNameError ? "visible" : "invisible"
                         }`}
@@ -210,6 +211,7 @@ function BookingForm({ availableTime, dispatchUpdateTimes }) {
                         required
                     />
                     <span
+                        data-testid="lastName-error-msg"
                         className={`${errorTextStyle} ${
                             lastNameError ? "visible" : "invisible"
                         }`}
@@ -249,6 +251,7 @@ function BookingForm({ availableTime, dispatchUpdateTimes }) {
                         required
                     />
                     <span
+                        data-testid="email-error-msg"
                         className={`${errorTextStyle} ${
                             emailError ? "visible" : "invisible"
                         }`}
