@@ -15,7 +15,7 @@ Little Lemon Restaurant is a family-run Mediterranean restaurant located in Chic
 <br/>
 
 
-## Live Demo  <a href="https://yiyd1004.github.io/little-lemon"><strong>« Click Here »</strong></a>
+## Live Demo&nbsp;&nbsp;&nbsp;<a href="https://yiyd1004.github.io/little-lemon" target="_blank" rel="noopener noreferrer"><strong>« Click Here »</strong></a>
 
 <br/>
 
