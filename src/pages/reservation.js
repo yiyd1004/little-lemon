@@ -46,6 +46,13 @@ function Reservation() {
         fetchData();
     }, [availableTime.date]);
 
+    useEffect(() => {
+        const element = document.getElementById("navbar");
+        if (element) {
+            element.scrollIntoView({ behavior: "instant" });
+        }
+    }, []);
+
     return (
         <section className="flex flex-col items-center pt-5 pb-8">
             <span className="w-fit font-Markazi-Text font-medium text-[4rem] leading-[4rem] text-little-lemon-yellow">

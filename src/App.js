@@ -46,7 +46,7 @@ function App() {
         <BrowserRouter basename={process.env.REACT_APP_API_URL}>
             <NavBar ref={navBarRef} />
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route exact path="/" element={<Home />} />
                 <Route path="/reservation" element={<Reservation />} />
                 <Route path="/confirm" element={<Confirm />} />
                 <Route path="/nan" element={<UnderConstruction />} />
