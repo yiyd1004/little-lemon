@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { SECTION_IDS } from "./NavBar";
+import { MENU } from "./NavBar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faSquareXTwitter,
@@ -31,12 +31,16 @@ function Footer() {
     };
 
     return (
-        <footer id="footer" className="w-full bg-little-lemon-green">
+        <footer
+            id="footer"
+            className="w-full min-h-[22.5rem] bg-little-lemon-green"
+        >
             <div className="flex flex-col footer:flex-row relative w-full footer:w-[68%] footer:mx-auto items-center footer:items-start footer:justify-between py-10">
                 <img
                     src={logo}
                     alt="little lemon log"
                     className="w-[4rem] footer:w-[6rem] mb-10"
+                    loading="lazy"
                 />
                 <div className={`${containerStyle} mb-10`}>
                     <span
@@ -45,14 +49,17 @@ function Footer() {
                         Navigation
                     </span>
                     <ul>
-                        {Object.values(SECTION_IDS).map((v) => (
+                        {Object.values(MENU).map((menu) => (
                             <div
-                                key={v}
+                                key={menu.id}
                                 className={`${containerStyle} ${textStyle} font-medium text-white mb-2 select-none`}
                             >
-                                <Link to="/" onClick={() => handleClick(v)}>
-                                    {[...v][0].toUpperCase() +
-                                        [...v].slice(1).join("")}
+                                <Link
+                                    to={menu.path}
+                                    onClick={() => handleClick(menu.id)}
+                                >
+                                    {[...menu.id][0].toUpperCase() +
+                                        [...menu.id].slice(1).join("")}
                                 </Link>
                             </div>
                         ))}

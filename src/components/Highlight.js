@@ -12,6 +12,7 @@ function Highlight({ name, price, fileName, description }) {
                 src={require(`../assets/${fileName}`)}
                 alt="greek salad"
                 className="w-full h-[12.5rem] object-cover rounded-t-[16px]"
+                loading="lazy"
             />
             <div className="flex justify-between mt-5 mx-5">
                 <span className="font-Markazi-Text font-bold text-[1.375rem] leading-[1.375rem]">

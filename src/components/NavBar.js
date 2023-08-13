@@ -5,13 +5,13 @@ import { forwardRef, useState } from "react";
 import logo from "../assets/Logo.svg";
 import NavBtn from "./NavBtn";
 
-export const SECTION_IDS = {
-    HOME: "home",
-    MENU: "menu",
-    RESERVATIONS: "reservations",
-    ORDER_ONLINE: "order online",
-    ABOUT: "about",
-    LOGIN: "login",
+export const MENU = {
+    HOME: { id: "home", path: "/" },
+    MENU: { id: "menu", path: "/nan" },
+    RESERVATIONS: { id: "reservations", path: "/reservation" },
+    ORDER_ONLINE: { id: "order online", path: "/nan" },
+    ABOUT: { id: "about", path: "/#about" },
+    LOGIN: { id: "login", path: "/nan" },
 };
 
 const NavBar = forwardRef(function NavBar(props, navBarRef) {
@@ -21,7 +21,7 @@ const NavBar = forwardRef(function NavBar(props, navBarRef) {
     const handleClick = (id) => {
         handleMenuBtn();
 
-        if (location.pathname === "/" && id !== SECTION_IDS.HOME) {
+        if (location.pathname === "/" && id !== MENU.HOME) {
             const element = document.getElementById(id);
             if (element) {
                 element.scrollIntoView({
@@ -47,14 +47,16 @@ const NavBar = forwardRef(function NavBar(props, navBarRef) {
                     src={logo}
                     alt="Little Lemon Logo"
                     className="max-h-[70%] max-w-[12.375rem] self-center mx-auto navbar:mx-0 justify-start"
+                    loading="lazy"
                 />
                 <div className="hidden navbar:block self-center">
                     <ul>
-                        {Object.values(SECTION_IDS).map((v) => (
+                        {Object.values(MENU).map((menu) => (
                             <NavBtn
-                                key={v}
+                                key={menu.id}
+                                path={menu.path}
                                 isMobile={false}
-                                text={v}
+                                text={menu.id}
                                 onClick={handleClick}
                             />
                         ))}
@@ -67,11 +69,12 @@ const NavBar = forwardRef(function NavBar(props, navBarRef) {
                 } navbar:hidden w-full content-center bg-white`}
             >
                 <ul>
-                    {Object.values(SECTION_IDS).map((v) => (
+                    {Object.values(MENU).map((menu) => (
                         <NavBtn
-                            key={v}
+                            key={menu.id}
+                            path={menu.path}
                             isMobile={true}
-                            text={v}
+                            text={menu.id}
                             onClick={handleClick}
                         />
                     ))}

@@ -1,5 +1,6 @@
 import Button from "./Button";
 import restaurantFood from "../assets/restauranfood.jpg";
+import { Link } from "react-router-dom";
 
 function Hero() {
     const data = {
@@ -29,13 +30,16 @@ function Hero() {
                         {data.description}
                     </div>
                     <div className="mt-7 mx-auto">
-                        <Button text="Reserve a Table" />
+                        <Link to="/reservation">
+                            <Button text="Reserve a Table" />
+                        </Link>
                     </div>
                 </div>
                 <img
                     src={restaurantFood}
                     alt="food"
                     className="absolute w-[20rem] h-[25rem] top-[3rem] right-0 rounded-[16px] hidden mobile:block"
+                    loading="lazy"
                 />
             </div>
         </section>

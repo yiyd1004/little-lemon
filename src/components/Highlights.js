@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Button from "./Button";
 import Highlight from "./Highlight";
 
@@ -47,7 +48,9 @@ function Highlights() {
                         {data.title}
                     </span>
                     <div className="self-center mt-5 mb-9 highlight:my-0">
-                        <Button text="Online Menu" />
+                        <Link to="/nan">
+                            <Button text="Online Menu" />
+                        </Link>
                     </div>
                 </div>
                 <div className="w-[80%] mobile:w-full h-fit mt-5 mx-auto flex flex-wrap gap-8 justify-center highlight-card-container:justify-between">

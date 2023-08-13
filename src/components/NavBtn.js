@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-function NavBtn({ text, isMobile, onClick }) {
+function NavBtn({ text, path, isMobile, onClick }) {
     const baseListStyle =
         "h-[80%] mx-[12px] text-xl font-Karla font-bold text-little-lemon-green " +
         "hover:underline hover:decoration-little-lemon-green hover:underline-offset-[6px]";
@@ -11,7 +11,7 @@ function NavBtn({ text, isMobile, onClick }) {
 
     return (
         <li className={isMobile ? mobileListStyle : listStyle}>
-            <NavLink to="/" onClick={() => onClick(text)}>
+            <NavLink to={path} onClick={() => onClick(text)}>
                 {[...text][0].toUpperCase() + [...text].slice(1).join("")}
             </NavLink>
         </li>

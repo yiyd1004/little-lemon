@@ -1,6 +1,6 @@
 import React from "react";
 
-function Button({ text }) {
+function Button({ text, onClick }) {
     const style = [
         "bg-little-lemon-yellow",
         "min-w-[12rem] max-h-[2.5rem]",
@@ -14,7 +14,11 @@ function Button({ text }) {
         "transform active:scale-110 transition-transform",
     ].join(" ");
 
-    return <button className={style}>{text}</button>;
+    return (
+        <button className={style} onClick={onClick}>
+            {text}
+        </button>
+    );
 }
 
 export default Button;

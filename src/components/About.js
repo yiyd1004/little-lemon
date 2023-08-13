@@ -44,11 +44,13 @@ function About() {
                         src={chefImg1}
                         alt="food"
                         className="w-[18rem] h-[23rem] rounded-[16px] object-cover hidden about:block scale-x-flip outline outline-1 translate-x-[30%] translate-y-[20%]"
+                        loading="lazy"
                     />
                     <img
                         src={chefImg2}
                         alt="food"
                         className="w-[18rem] h-[23rem] rounded-[16px] object-cover hidden about:block outline outline-1 z-50"
+                        loading="lazy"
                     />
                 </div>
             </div>

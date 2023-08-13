@@ -1,18 +1,20 @@
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import NavBar from "./components/NavBar";
-import Testimonials from "./components/Testimonials";
+import Footer from "./components/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareCaretUp } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useRef, useState } from "react";
+import Reservation from "./pages/reservation";
+import Confirm from "./pages/confirm";
+import UnderConstruction from "./components/UnderConstruction";
 
 function App() {
     const navBarRef = useRef(null);
     const [isVisible, setVisible] = useState(false);
 
     const handleClick = (id) => {
-        console.log("click");
         const element = document.getElementById(id);
         if (element) {
             element.scrollIntoView({
@@ -24,7 +26,6 @@ function App() {
 
     useEffect(() => {
         const ref = navBarRef.current;
-        console.log(ref);
         const observer = new IntersectionObserver((entries) => {
             const [entry] = entries;
             setVisible(entry.isIntersecting);
@@ -42,14 +43,15 @@ function App() {
     }, [navBarRef]);
 
     return (
-        <Router>
+        <BrowserRouter basename={process.env.REACT_APP_API_URL}>
             <NavBar ref={navBarRef} />
-            <main>
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/testimonials" element={<Testimonials />} />
-                </Routes>
-            </main>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/reservation" element={<Reservation />} />
+                <Route path="/confirm" element={<Confirm />} />
+                <Route path="/nan" element={<UnderConstruction />} />
+            </Routes>
+            <Footer />
             <div
                 className={`fixed w-fit h-fit bottom-5 right-5 mobile:bottom-10 mobile:right-10 opacity-60 ${
                     isVisible ? "hidden" : "block"
@@ -62,7 +64,7 @@ function App() {
                     style={{ color: "#d3d3d3" }}
                 />
             </div>
-        </Router>
+        </BrowserRouter>
     );
 }
 

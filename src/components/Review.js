@@ -41,6 +41,7 @@ function Review({ name, profileImg, review }) {
                     src={require(`../assets/${profileImg}`)}
                     alt="profile"
                     className="w-12 h-12 object-cover rounded-full"
+                    loading="lazy"
                 />
                 <span className="ml-3 font-Karla font-bold text-[1.125rem]">
                     {name}
